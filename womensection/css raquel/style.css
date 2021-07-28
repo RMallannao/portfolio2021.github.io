@@ -1,0 +1,256 @@
+/*Colors*/
+:root{
+  --lightbLue: #e4deec;
+  --lightpink: #f8b799;
+  --orange: #f89c59;
+  --lightbrown: #a5603f;
+  --darkbrown: #392821;
+  --yellowred: #ffc971;
+  --BrownPeach: #c7cb85;
+  --appleGreen: #c7cb85;
+
+}
+
+body{
+  font-family: 'Questrial', sans-serif;
+  background-color: var(--lightbLue);
+  color: var(--darkbrown);
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: bolder!important;
+}
+.container-fluid{
+  padding: 0!important;
+  width: 100%!important;
+}
+/*for the carousel*/
+.col-lg-12{
+    padding: 0!important;
+}
+/* Make the image fully responsive */
+.carousel-inner img {
+  width: 100%;
+  height: 602px;
+  background-attachment: fixed!important;
+  background-size: cover!important;
+  background-position: center!important;
+}
+        #ShopCat{  
+          height: 250px; 
+          margin: 5%;
+        }
+div a{
+  text-decoration: none!important;
+}
+.featuredItems h3,
+.category h3{
+  margin-bottom: 30px;  
+  font-weight: bold!important;
+  text-transform: uppercase;
+  text-align: center;
+}
+.categoryTops{
+  border: 10px double var(--darkbrown);
+  background-color:  var(--lightbrown);
+  height: 60px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: var(--lightbLue);
+  display: inline-flex;
+  position: relative;
+  width: 27vh;
+}
+.categoryTops:hover{
+  box-shadow: 0px 4px 7px 4px #888888bf;
+}
+.categoryTops img{
+    width: 30%;
+    height: 75%;
+      display: block;
+    margin: auto;
+    position: absolute;
+    margin: 5px 11px;
+}
+.categoryTops p{
+  color: var(--darkbrown);
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-text-emphasis: triangle;
+      display: block;
+    position: absolute;
+     margin: 4px 0px;
+    right: 12px;
+    font-size: 15px;
+}
+.categoryTops img p{
+  display: flex;
+}
+
+@media (min-width: 900px){
+  .categoryTops p{
+    font-size: 15px;
+  }
+}
+@media (min-width: 600px){
+      .categoryTops p{
+      font-size: 15px;
+    }
+}
+        #featured{
+          height: 500px;
+          margin: 5%;
+        }
+
+.items{
+  background-color: black;
+  height: 300px;
+  width: auto;
+  position: relative;
+}
+.items:hover{
+  background-color: red;
+}
+
+.items img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s linear;
+
+  overflow: hidden;
+}
+.items .itemsFront{
+  z-index: 1;
+  transition: opacity .5s linear;
+  cursor: pointer;
+}
+.items:hover > .itemsFront{
+  opacity: 0;
+}
+.itemDesc{
+  margin: 1% 0 10% 0;
+}
+
+
+
+/*WOMEN CATEGORIRES SECTION*/
+
+.sidenav {
+  height: 100%;
+  width: 210px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--darkbrown);
+  overflow-x: hidden;
+  padding-top: 8%;
+
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  div.menu{
+    padding: 20px;
+    width: 1280px;
+    margin: 40px auto;
+    cursor: pointer;
+  }
+  div.menu h5{
+    color: var(--lightbLue);
+    margin: 10px;
+
+  }
+
+  div.menu a.list{
+    color: var(--lightbLue)!important;
+  }
+  div.menu a.list.active{
+    background-color: var(--lightbLue);
+    color: var(--darkbrown)!important;
+        cursor: pointer;
+        font-weight: bolder;
+
+  }
+  .product{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12% 5%;
+  }
+  .product .itemBox{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    margin: 36px 15px; 
+  }
+  .itemBox img.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s linear;
+    
+  }
+  .itemBox img.Front{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s linear;
+    z-index: 1;
+  }
+
+  .itemBox:hover> img.Front{
+      opacity: 0;
+    }
+  @media only screen and (max-width: 800px){
+    .product .itemBox{
+      flex: 50%;
+    }
+  }
+  @media only screen and (max-width: 600px){
+    .product .itemBox{
+      flex: 100%;
+    }
+  
+
+  span.productDesc{
+    text-decoration: none;
+    color: var(--darkbrown)!important;
+    position: absolute!important;
+    bottom: 0;
+  }

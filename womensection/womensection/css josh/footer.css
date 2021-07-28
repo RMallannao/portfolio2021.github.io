@@ -1,0 +1,113 @@
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+footer ul{
+    padding: 0;
+    margin: 0;
+}
+
+footer{
+    background:#3b3b3b;
+    color: #fff;
+    padding: 60px 0;
+}
+footer .container-foot{
+    max-width: 11000px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+footer li{
+    list-style: none;
+    line-height: 2;
+}
+footer a{
+    text-decoration: none;
+    color: #ccc;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+footer .itemJ{
+    flex-basis: 20%;
+    width: 500px;
+    margin: 20px;
+}
+footer .itemJ .logo{
+    text-transform: capitalize;
+    font-size: 1.4em;
+    color: #b6b6b6;
+}
+footer .itemJ p{
+    margin: 1.2em 0;
+}
+footer .social{
+    display: flex;
+}
+footer .social a{
+    height: 30px;
+    width: 30px;
+    background: #383535;
+    border-radius: 5px;
+    margin:10px 5px;
+    text-align: center;
+}
+footer .social a i{
+    font-size: 1.3em;
+    line-height: 30px;
+}
+footer .itemJ h3{
+    position: relative;
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+    /* color: aliceblue; */
+}
+
+footer .itemJ .btn{
+    margin: 20px auto;
+    align-items: center;
+    width: 30%;
+    font-size:15px;
+    font-weight: bold;
+    color:#fff;
+    background:#252525;
+    text-transform: uppercase;
+    padding:15px 25px 14px 25px;
+    display: block;
+    text-align: center;
+}
+
+footer hr{
+    opacity: .3;
+}
+footer .end{
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+footer iframe{
+    width: 400px;
+    height: 400px;
+}
+
+footer .form-box{
+    width: 500px;
+    clear: both;
+}
+
+footer .form-box input{
+    width: 500px;
+    clear: both;
+}
+
+
+@media (max-width:640px){
+    footer .itemJ{
+    flex-basis: 80%;
+    margin: auto;
+}
+
+}

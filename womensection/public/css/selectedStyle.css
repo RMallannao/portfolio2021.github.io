@@ -1,0 +1,192 @@
+:root{
+  --lightbLue: #e4deec;
+  --lightpink: #f8b799;
+  --orange: #b94a2c;
+  --lightbrown: #a5603f;
+  --darkbrown: #392821;
+  --gray: #9e9e9e8c;
+
+  --yellowred: #ffc971;
+  --BrownPeach: #c7cb85;
+  --appleGreen: #c7cb85;
+
+}
+body{
+  font-family: 'Questrial', sans-serif;
+  background-color: var(--lightbLue);
+  color: var(--darkbrown);
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: bolder!important;
+}
+  /*for SELECTED ITEMS | WOMEN  */
+  /* DRESS CATEGORY  */
+
+#selected{
+
+}
+
+  .preview{
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+  ul.thumb{
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+  }
+  ul.thumb li{
+    list-style: none;
+    margin: 0px 30px 10px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    
+  }
+  ul.thumb li img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  .imgBox{ 
+    float: left;
+    width: 65%;
+    height: 100%;
+    border: 1px solid gray;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.previewDesc{
+	margin: 22% 5% 10% 5%;
+}
+
+.radio-toolbar input[type="radio"] {
+display:none
+}
+.radio-toolbar label {
+    display: inline-block;
+    background-color: transparent;
+    padding: 6px;
+    border: 2px solid var(--gray);
+    border-radius: 4px;
+    margin-left:5px; 
+}
+.radio-toolbar input[type="radio"]:checked + label {
+    background-color: transparent;
+    border-color: var(--darkbrown);
+}
+.radio-toolbar label:hover{
+	background-color: #a5603f54;
+	color: gray;
+}
+.quantitybtn{
+		width: 25%;
+		margin-left: 10px;
+	}
+	input[type=number]{
+		display: inline-block;
+		width: 60px;
+		text-align: center;
+		background-color: transparent;
+	}
+	button{
+		display: inline-block;
+		background-color: transparent;
+	}
+	
+	/*to remove the button in input type number*/
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+	}
+
+img.ratingIcon {
+    width: 33%;
+}
+.ratingIcon{
+	margin-top: 20px;
+}
+.ratingIcon,.ratingIcon.img{
+	text-align: center;
+} 
+.ratingIcon span img{
+	width: 35%;
+}
+.reviewsBox{
+	margin: 20px;
+}
+
+       #featured{
+          height: 450px;
+          margin: 5%;
+        }
+.featuredItems h3{
+	margin-bottom: 20px;
+}
+.items{
+  background-color: black;
+  height: 300px;
+  width: auto;
+  position: relative;
+}
+.items:hover{
+  background-color: red;
+}
+
+.items img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s linear;
+  overflow: hidden;
+}
+.items .itemsFront{
+  z-index: 1;
+  transition: opacity .5s linear;
+  cursor: pointer;
+}
+.items:hover > .itemsFront{
+  opacity: 0;
+}
+.itemDesc{
+  margin: 1% 0 10% 0;
+}
+a.itemDesc p,
+a.itemDesc h6{
+	text-decoration: none!important;
+}
+
+button.addtocart {
+  background-color: var(--darkbrown); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button.addtocart:hover {
+  opacity: 0.9;
+}
+
+#footer{
+      padding: 60px 0 0 15%!important;
+}

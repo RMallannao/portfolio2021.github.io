@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<style type="text/css">
+
+#hidden, #hidden2 {
+    z-index: 1;
+    display:none;
+    background-color:#1b1819b8;
+    position:fixed;
+    height:100%;
+    width:100%;
+    left: 0px;
+    top: 0px;    
+    text-align: center;
+}
+#hidden img,
+#hidden2 img{
+      height: 88%;
+    padding: 30px;
+
+    overflow: hidden;
+}
+.close,
+.close2 {
+    position: absolute;
+    right: 30%;
+    top: 3%;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+</style>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+<span class="fit">
+      <a href="#" target="_blank">
+        <img src="img/act1.jpg" alt="image" />
+      </a>
+</span>     
+    <div id="hidden">
+      <img src="img/act1.jpg" alt="image" />
+      <div class="close">X</div>
+    </div>
+
+
+
+
+
+
+<span class="fit2">
+  <a href="#" target="_blank">
+    <img src="img/act2.jpg" alt="image" />
+  </a>
+</span>
+
+      <div id="hidden2">
+          <img src="img/act2.jpg" alt="image" />
+          <div class="close2">X</div>
+      </div>
+
+
+
+<script>
+$(document).ready(function() {
+  $(".fit").click( function(e) {
+      e.preventDefault();
+      $("#hidden").show();
+  });
+
+  $('.close').click(function(){
+      $("#hidden").hide();
+  })
+})
+
+
+$(document).ready(function() {
+  $(".fit2").click( function(e) {
+      e.preventDefault();
+      $("#hidden2").show();
+  });
+
+  $('.close2').click(function(){
+      $("#hidden2").hide();
+  })
+});
+</script>
+</body>
+</html>
